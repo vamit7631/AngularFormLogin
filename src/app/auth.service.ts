@@ -16,11 +16,11 @@ export class AuthService {
 
   setLoggedIn(value: boolean){
     this.loggedInStatus = value;
-   // localStorage.setItem('loggedIn', 'true');
+    localStorage.setItem('loggedIn', 'true');
   }
 
   get isLoggedIn(){
-    return this.loggedInStatus;
+    return this.loggedInStatus
   }
   getUserDetails(username, password) {
 
